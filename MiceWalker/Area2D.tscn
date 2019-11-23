@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Area2D.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Individual Sprites/adventurer-idle-00.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Individual Sprites/adventurer-idle-01.png" type="Texture" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 4.5
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+
+[node name="Player" type="Area2D"]
+position = Vector2( 52.3352, 327.469 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+velocidad = 200
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
