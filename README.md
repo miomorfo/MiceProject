@@ -1,5 +1,5 @@
 # MiceProject
-se inicia el proyecto de MiceWalker
+Se inicia el proyecto de MiceWalker
 
 
 
