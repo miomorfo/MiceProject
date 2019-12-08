@@ -3,9 +3,9 @@ extends KinematicBody2D
 #la clase Vector2 contiene el sistema de cordenadas para poder movernos por el escenario
 var movimiento = Vector2()
 const UP = Vector2(0, -1)
-const GRAVEDAD = 20
+const GRAVEDAD = 60
 const VELOCIDAD = 200
-const ALTURA_SALTO = -500
+const ALTURA_SALTO = -800
 
 func _physics_process(delta):
 	#gravedad
@@ -22,7 +22,7 @@ func _physics_process(delta):
 	
 	#se detecta el suelo
 	if is_on_floor():
-#		print("el personaje está tocanto el suelo")
+		#print("el personaje está tocanto el suelo")
 		if Input.is_action_just_pressed("ui_up"):
 			movimiento.y = ALTURA_SALTO
 		
