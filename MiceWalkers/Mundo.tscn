@@ -1,0 +1,182 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32, 32 )
+
+[node name="Mundo" type="Node"]
+
+[node name="Personaje" type="KinematicBody2D" parent="."]
+position = Vector2( 352, 160 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Personaje"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personaje"]
+shape = SubResource( 1 )
+
+[node name="Suelos" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="Suelo" type="StaticBody2D" parent="Suelos"]
+editor/display_folded = true
+position = Vector2( 288, 416 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Suelos/Suelo"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelos/Suelo"]
+shape = SubResource( 2 )
+
+[node name="Suelo9" type="StaticBody2D" parent="Suelos"]
+editor/display_folded = true
+position = Vector2( 224, 416 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Suelos/Suelo9"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelos/Suelo9"]
+shape = SubResource( 2 )
+
+[node name="Suelo10" type="StaticBody2D" parent="Suelos"]
+editor/display_folded = true
+position = Vector2( 224, 352 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Suelos/Suelo10"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelos/Suelo10"]
+shape = SubResource( 2 )
+
+[node name="Suelo11" type="StaticBody2D" parent="Suelos"]
+editor/display_folded = true
+position = Vector2( 160, 352 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Suelos/Suelo11"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelos/Suelo11"]
+shape = SubResource( 2 )
+
+[node name="Suelo2" type="StaticBody2D" parent="Suelos"]
+editor/display_folded = true
+position = Vector2( 480, 416 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Suelos/Suelo2"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelos/Suelo2"]
+shape = SubResource( 2 )
+
+[node name="Suelo3" type="StaticBody2D" parent="Suelos"]
+editor/display_folded = true
+position = Vector2( 416, 416 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Suelos/Suelo3"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelos/Suelo3"]
+shape = SubResource( 2 )
+
+[node name="Suelo4" type="StaticBody2D" parent="Suelos"]
+editor/display_folded = true
+position = Vector2( 352, 416 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Suelos/Suelo4"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelos/Suelo4"]
+shape = SubResource( 2 )
+
+[node name="Suelo5" type="StaticBody2D" parent="Suelos"]
+editor/display_folded = true
+position = Vector2( 544, 416 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Suelos/Suelo5"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelos/Suelo5"]
+shape = SubResource( 2 )
+
+[node name="Suelo6" type="StaticBody2D" parent="Suelos"]
+editor/display_folded = true
+position = Vector2( 544, 352 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Suelos/Suelo6"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelos/Suelo6"]
+shape = SubResource( 2 )
+
+[node name="Suelo7" type="StaticBody2D" parent="Suelos"]
+editor/display_folded = true
+position = Vector2( 608, 352 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Suelos/Suelo7"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelos/Suelo7"]
+shape = SubResource( 2 )
+
+[node name="Suelo8" type="StaticBody2D" parent="Suelos"]
+editor/display_folded = true
+position = Vector2( 672, 352 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Suelos/Suelo8"]
+modulate = Color( 0, 0, 0, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelos/Suelo8"]
+shape = SubResource( 2 )
