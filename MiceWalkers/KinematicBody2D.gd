@@ -6,6 +6,7 @@ const UP = Vector2(0, -1)
 const GRAVEDAD = 60
 const VELOCIDAD = 200
 const ALTURA_SALTO = -800
+const DOBLE_SALTO = -1200
 
 func _physics_process(delta):
 	#gravedad
@@ -21,10 +22,18 @@ func _physics_process(delta):
 		movimiento.x = 0
 	
 	#se detecta el suelo
+	#movimiento en el ehje Y
 	if is_on_floor():
 		#print("el personaje está tocanto el suelo")
 		if Input.is_action_just_pressed("ui_up"):
 			movimiento.y = ALTURA_SALTO
 		
+		
+		
 	movimiento = move_and_slide(movimiento, UP)
 	pass
+	
+	#salto mas grande cuando esta tocando la pared
+	if is_on_wall():
+		if Input.is_action_just_pressed("ui_up"):
+			movimiento.y = DOBLE_SALTO

@@ -24,6 +24,10 @@ texture = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Personaje"]
 shape = SubResource( 1 )
 
+[node name="FollowCamera" type="Camera2D" parent="Personaje"]
+current = true
+zoom = Vector2( 0.8, 0.8 )
+
 [node name="Suelos" type="Node" parent="."]
 
 [node name="Suelo" type="StaticBody2D" parent="Suelos"]
@@ -210,7 +214,7 @@ shape = SubResource( 2 )
 
 [node name="Suelo8" type="StaticBody2D" parent="Suelos"]
 editor/display_folded = true
-position = Vector2( 670, 351 )
+position = Vector2( 671.307, 352.121 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -224,7 +228,7 @@ shape = SubResource( 2 )
 
 [node name="Suelo17" type="StaticBody2D" parent="Suelos"]
 editor/display_folded = true
-position = Vector2( 733, 355 )
+position = Vector2( 734.868, 352.385 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -392,7 +396,7 @@ shape = SubResource( 2 )
 
 [node name="Suelo30" type="StaticBody2D" parent="Suelos"]
 editor/display_folded = true
-position = Vector2( 440, 569 )
+position = Vector2( 441.29, 570.29 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -430,18 +434,4 @@ modulate = Color( 0, 0, 0, 1 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Suelos/Suelo15"]
-shape = SubResource( 2 )
-
-[node name="Suelo16" type="StaticBody2D" parent="Suelos"]
-editor/display_folded = true
-position = Vector2( 677, 226 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Suelos/Suelo16"]
-modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelos/Suelo16"]
 shape = SubResource( 2 )
