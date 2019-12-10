@@ -22,7 +22,7 @@ func _physics_process(delta):
 		movimiento.x = 0
 	
 	#se detecta el suelo
-	#movimiento en el ehje Y
+	#movimiento en el eje Y
 	if is_on_floor():
 		#print("el personaje está tocanto el suelo")
 		if Input.is_action_just_pressed("ui_up"):
