@@ -13,9 +13,11 @@ func _physics_process(delta):
 	movimiento.y += GRAVEDAD
 	
 	#movimiento del personaje en el eje X
-	if Input.is_action_pressed("ui_right"):
+#	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("derecha"):
 		movimiento.x = VELOCIDAD
-	elif Input.is_action_pressed("ui_left"):
+#	elif Input.is_action_pressed("ui_left"):
+	elif Input.is_action_pressed("izquierda"):
 		movimiento.x = -VELOCIDAD
 	else:
 		#si no se presiona nada detener el personaje
